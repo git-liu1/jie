@@ -1,0 +1,45 @@
+---
+layout: base
+---
+
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">文章浏览</a>
+    </ol>
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="{{site.baseurl}}/img/liulan.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{page.title}}</h2>
+         {{content}}
+      </div>
+    </div>
+    <div class="clearfix">
+          {% if page.previous %}
+            <a class="btn btn-primary float-left" href="{{site.baseurl}}/{{page.previous.url}}">上一篇： {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next %}
+            <a class="btn btn-primary float-right" href="{{site.baseurl}}/{{page.next.url}}">下一篇： {{page.next.title}}</a>
+          {% endif %}
+        </div>
+    <h2>阅读感想</h2>
+    <div class="row">
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="{{site.baseurl}}/img/foot1.gif" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="{{site.baseurl}}/img/foot2.gif" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="{{site.baseurl}}/img/foot3.gif" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="{{site.baseurl}}/img/foot4.gif" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="{{site.baseurl}}/img/foot5.gif" alt="">
+      </div>
+    </div>
+  </div>
